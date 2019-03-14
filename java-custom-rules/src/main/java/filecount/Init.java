@@ -40,7 +40,7 @@ public class Init {
 		this.finalCount = finalCount;
 	}
 
-	public Init() throws Exception {
+	public Init() throws Exception  {
 		textFileReader = new TextFileReader("C:\\Users\\LO20019523\\Desktop\\FileCounterPractice.txt");
 		String warFilePath = textFileReader.returnWarFilePath();
 		unzip = new Unzip(warFilePath, textFilePath);
@@ -80,8 +80,7 @@ public class Init {
 		setFinalJavaCount(fileCounter.counter(jspClassFileObj, "^__.*\\.java$"));
 		System.out.println("The amount of __jsp.class files is: " + finalCount);
 		System.out.println("The amount of __jsp.java files is: " + finalJavaCount);
-		//if (finalCount - finalJavaCount != 0)
-		 //   throw new Exception("Not all .class files have compiled");
+
 		
 	}
 

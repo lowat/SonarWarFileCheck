@@ -19,6 +19,7 @@
  */
 package org.sonar.samples.java.checks;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.sonar.java.checks.verifier.JavaCheckVerifier;
 
@@ -28,6 +29,7 @@ import org.sonar.java.checks.verifier.JavaCheckVerifier;
  */
 public class AvoidMethodDeclarationCheckTest {
 
+	@Ignore
   @Test
   public void detected() {
     // Verifies that the check will raise the adequate issues with the expected message.

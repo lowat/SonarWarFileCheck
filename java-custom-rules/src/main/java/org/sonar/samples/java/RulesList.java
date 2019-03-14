@@ -26,6 +26,7 @@ import org.sonar.samples.java.checks.AvoidAnnotationRule;
 import org.sonar.samples.java.checks.AvoidBrandInMethodNamesRule;
 import org.sonar.samples.java.checks.AvoidMethodDeclarationRule;
 import org.sonar.samples.java.checks.AvoidSuperClassRule;
+import org.sonar.samples.java.checks.AvoidTooManyParametersForMethodRule;
 import org.sonar.samples.java.checks.AvoidUnmodifiableListRule;
 import org.sonar.samples.java.checks.MyCustomSubscriptionRule;
 import org.sonar.samples.java.checks.SecurityAnnotationMandatoryRule;
@@ -50,6 +51,7 @@ public final class RulesList {
       .add(AvoidUnmodifiableListRule.class)
       .add(MyCustomSubscriptionRule.class)
       .add(SecurityAnnotationMandatoryRule.class)
+      .add(AvoidTooManyParametersForMethodRule.class)
       .build();
   }
 

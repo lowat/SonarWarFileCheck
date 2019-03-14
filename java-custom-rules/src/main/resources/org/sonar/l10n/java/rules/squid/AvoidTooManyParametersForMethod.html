@@ -1,0 +1,13 @@
+<p>Method should not have more than 5 input parameters</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+	public void methodTest(int input1, int input2, int input3, int input4, int input5, int input6) { // Noncompliant {{Too Many Parameters}} 
+		System.out.println(input1+input2+input3+input4+input5+input6)
+	}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+	public void methodTest(int input1, int input3, int input3) {
+		
+	}
+</pre>

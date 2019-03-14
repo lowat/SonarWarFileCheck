@@ -19,6 +19,7 @@
  */
 package org.sonar.samples.java.checks;
 
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.sonar.java.checks.verifier.JavaCheckVerifier;
@@ -29,6 +30,7 @@ public class SecurityAnnotationMandatoryCheckTest {
   @Rule
   public CheckMessagesVerifierRule checkMessagesVerifier = new CheckMessagesVerifierRule();
 
+  @Ignore
   @Test
   public void detected() {
 
